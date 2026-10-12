@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Production Build
+client/dist/
+
+# Environment Variables and Secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Temporary / OS
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+
+# Local Runtime Database Cache (Demo files in data/demo/ are tracked)
+data/database.json
