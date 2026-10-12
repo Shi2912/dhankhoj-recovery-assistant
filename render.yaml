@@ -3,7 +3,7 @@ services:
     name: dhankhoj-recovery-assistant
     runtime: node
     plan: free
-    buildCommand: npm install --include=dev && npm run build
+    buildCommand: npm --prefix server install && npm --prefix client install --include=dev && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
